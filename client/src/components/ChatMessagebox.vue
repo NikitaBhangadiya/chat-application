@@ -28,7 +28,7 @@ export default {
   methods: {
     sendMessage() {
       if (this.newMsg) {
-        this.socket.emit("/chat", { name: "Nikita", message: this.newMsg });
+        this.socket.emit("/chat", { message: this.newMsg });
         this.newMsg = "";
       }
     },
